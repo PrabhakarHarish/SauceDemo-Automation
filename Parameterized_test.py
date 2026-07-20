@@ -117,3 +117,7 @@ async def test_logout(page):
     await inventory_page.logout()
 
     assert await login_page.login_btn.is_visible()
+
+
+
+# pytest -v Parameterized_test.py
