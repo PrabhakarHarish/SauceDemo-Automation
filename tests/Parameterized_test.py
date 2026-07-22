@@ -55,8 +55,6 @@ async def test_product_prices(page, product_name, expected_price):
     actual_price = await product.locator(".inventory_item_price").inner_text()
     assert actual_price == expected_price
 
-    assert actual_price == expected_price
-
 # ADD TO CART
 
 async def test_add_to_cart(page):
