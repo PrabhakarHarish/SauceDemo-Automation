@@ -1,0 +1,15 @@
+1) What did the broken-locator error message tell you, exactly?
+	-> So breaking of locator error message basically tells that there is "timeout error" since there is a modification in the locator in the pages.py page.
+	-> So this error basically waits for 30 seconds and to search the desired locator and performs click operations if the locator is present in the test script or POM.
+	-> Since it is not found it throws a timeout error as there is change in the locator.
+	-> in short terms the playwright couldnt locate and perform the click operation on the target element within 30- Seconds time so it threw the timeout error.
+	
+2) await Page.pause()
+	-> This is performed whenever the debugging of tests has to be done.
+	-> It allow to pause the execution and verify the locators in every steps and helps it cross verify it through the document object model.
+	-> It helped me understand what the web application (browser - Sauce demo application) do at each and every step
+
+3)Trace file (trace.zip)
+	->trace.zip is a Playwright trace file that records the complete execution of a test, including actions, screenshots, DOM snapshots, network activity, and errors. 
+	->It is mainly used for debugging because it allows us to replay the test step by step and identify exactly where and why a failure occurred.
+
