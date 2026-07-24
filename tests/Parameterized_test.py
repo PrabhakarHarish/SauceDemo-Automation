@@ -18,6 +18,8 @@ async def test_login_variations(page, username, expected_success):
     await login_page.goto()
     await login_page.login(username, "secret_sauce")
 
+    await page.pause()
+
     if expected_success:
 
         assert "inventory.html" in page.url
