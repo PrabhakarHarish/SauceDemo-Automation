@@ -12,6 +12,7 @@
 3)Trace file (trace.zip)
 	->trace.zip is a Playwright trace file that records the complete execution of a test, including actions, screenshots, DOM snapshots, network activity, and errors. 
 	->It is mainly used for debugging because it allows us to replay the test step by step and identify exactly where and why a failure occurred.
+	->After my Playwright test finishes, I check if the trace.zip file has been created. Then I open it using playwright show-trace trace.zip. If I can see the test steps, screenshots, and browser 	  actions in the Trace Viewer, I know the trace file was successfully generated and used for debugging.
 
 4)  When would you reach for each (error message vs. headed run vs. trace)?
 	->Error message first to quickly know what the error message and where the test is actually is failed and to know the cause of the test failure.
