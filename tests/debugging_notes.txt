@@ -2,7 +2,7 @@
 	-> So breaking of locator error message basically tells that there is "timeout error" since there is a modification in the locator in the pages.py page.
 	-> So this error basically waits for 30 seconds and to search the desired locator and performs click operations if the locator is present in the test script or POM.
 	-> Since it is not found it throws a timeout error as there is change in the locator.
-	-> in short terms the playwright couldnt locate and perform the click operation on the target element within 30- Seconds time so it threw the timeout error.
+	-> in short terms the playwright couldn't locate and perform the click operation on the target element within 30- Seconds time so it threw the timeout error.
 	
 2) await Page.pause()
 	-> This is performed whenever the debugging of tests has to be done.
@@ -13,3 +13,7 @@
 	->trace.zip is a Playwright trace file that records the complete execution of a test, including actions, screenshots, DOM snapshots, network activity, and errors. 
 	->It is mainly used for debugging because it allows us to replay the test step by step and identify exactly where and why a failure occurred.
 
+4)  When would you reach for each (error message vs. headed run vs. trace)?
+	->Error message first to quickly know what the error message and where the test is actually is failed and to know the cause of the test failure.
+	->Use the headed run to observe the browser's behavior during the execution of the test execution.
+	->trace file is used to replay the detailed execution history of the tests that we performed before using the trace file.
