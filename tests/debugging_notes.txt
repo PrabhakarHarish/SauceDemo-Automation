@@ -6,8 +6,8 @@
 	
 2) await Page.pause()
 	-> This is performed whenever the debugging of tests has to be done.
-	-> It allow to pause the execution and verify the locators in every steps and helps it cross verify it through the document object model.
 	-> It helped me understand what the web application (browser - Sauce demo application) do at each and every step
+	-> Pauses test execution at a specific point and launches the Playwright Inspector for debugging.
 
 3)Trace file (trace.zip)
 	->trace.zip is a Playwright trace file that records the complete execution of a test, including actions, screenshots, DOM snapshots, network activity, and errors. 
